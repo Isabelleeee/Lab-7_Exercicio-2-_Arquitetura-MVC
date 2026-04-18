@@ -33,16 +33,15 @@ O projeto segue a divisão clássica de responsabilidades do MVC, garantindo que
 └── static/            # Assets (CSS/Imagens)
     └── style.css
 
+---
+
 ## 🚀 Como Executar
 
-1. **Instale o Flask:**
-   ```bash
+1. Instale o Flask:
    pip install flask
 
-2. **Execute o Controller principal:**
-    ```bash
+2. Execute o Controller principal:
     python app.py
 
-3. **Acesse no navegador:**
-    ```bash
+3. Acesse no navegador:
     http://127.0.0.1:5000
