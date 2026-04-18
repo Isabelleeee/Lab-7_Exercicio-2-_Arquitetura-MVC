@@ -8,9 +8,9 @@ Este é o estágio inicial do MVP de uma livraria virtual, desenvolvido para dem
 
 O projeto segue a divisão clássica de responsabilidades do MVC, garantindo que a lógica de dados, a interface e o controle de fluxo estejam separados:
 
-* **Model (`models.py`):** Gerencia os dados e as regras de negócio. Define a estrutura do objeto `Livro` e a simulação do banco de dados.
+* **Model (`models.py`):** Gerencia os dados e as regras de negócio. Define a estrutura do objeto `Livro` e a simulação do banco de dados na memória.
 * **View (`templates/`):** Camada de apresentação que interage com o usuário. Utiliza HTML e a engine **Jinja2** para exibir os dados dinamicamente.
-* **Controller (`app.py`):** O cérebro da aplicação. Recebe as requisições do usuário, consulta o Model e decide qual View deve ser renderizada.
+* **Controller (`app.py`):** O cérebro da aplicação. Recebe as requisições HTTP, consulta o Model e decide qual View deve ser renderizada.
 
 ---
 
@@ -18,8 +18,8 @@ O projeto segue a divisão clássica de responsabilidades do MVC, garantindo que
 
 * **Linguagem:** Python 3.x
 * **Framework:** Flask
-* **Estilização:** CSS3
-* **Front-end:** HTML5 + Jinja2
+* **Front-end:** HTML5 + CSS3 + Jinja2
+* **Versionamento:** Git
 
 ---
 
@@ -30,18 +30,28 @@ O projeto segue a divisão clássica de responsabilidades do MVC, garantindo que
 ├── models.py          # Model (Estrutura de dados)
 ├── templates/         # Views (HTML)
 │   └── index.html
-└── static/            # Assets (CSS/Imagens)
+└── static/            # Assets (Estilização)
     └── style.css
+```
 
 ---
 
 ## 🚀 Como Executar
 
-1. Instale o Flask:
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/seu-usuario/nome-do-repo.git](https://github.com/seu-usuario/nome-do-repo.git)
+   ```
+
+2. **Instale as dependências:**
+   ```bash
    pip install flask
+   ```
 
-2. Execute o Controller principal:
-    python app.py
+3. **Inicie a aplicação:**
+   ```bash
+   python app.py
+   ```
 
-3. Acesse no navegador:
-    http://127.0.0.1:5000
+4. **Acesse no navegador:**
+   Abra `http://127.0.0.1:5000` para visualizar o front-end funcionando.
